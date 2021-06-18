@@ -1,3 +1,7 @@
+h1{
+	align-text: center;
+}
+
 /*==========Items for Sweden=========*/
 .flag-sweden {
 	display:  grid;
