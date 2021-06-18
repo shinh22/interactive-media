@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'ethan_sloperegular';
+    src: url('ethan-slope.ttf-webfont.woff2') format('woff2'),
+         url('ethan-slope.ttf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	witdh: 100%;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 10% ;
+	padding-bottom: 10%;
+	background-color: white;
+}
+
+h1{
+	font-family: 'ethan_sloperegular', sans-serif;
+	font-style: regular;
+	line-height: 7.5vw;
+	font-size: 6.2VW;
+	letter-spacing: 0.7vw;
+	z-index: 9999;
+	font-weight: 200;
+}
+
+h2{
+	font-family: NanumSquareWeb, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1.2vw;
+}
+
+
+p{
+	font-family: NanumSquareWeb, Helvetica, sans-serif;
+	font-weight: 200;
+	font-size: 0.7vw;
+}
+
+.contentbox{
+	width: 80vw;
+	height: 80vw;
+	position: relative;
+	display: inline-block;
+	background-color: white;
+	overflow: hidden;
+	box-shadow: 0.2vw 0.2vw 0.5vw #c4c1b7;
+	border: 0.5px solid black;
+	z-index: 1;
+}
+
+.slopebox{
+	position: absolute;
+	display: inline-block;
+	background: transparent; 
+	width :0px; 
+	height:0PX; 
+	border-left: 43vw solid black ; 
+	border-right: 43vw solid transparent; 
+	border-bottom: 43vw solid transparent; 
+	border-top: 43vw solid black;
+	margin-bottom: 43vw;
+	z-index: 10;
+}
+
+.textboxleft{
+	margin-left: 4.5vw;
+	margin-top: 26.4vw;
+	height: 50vw;
+	position: absolute;
+	display: inline-block;
+	color: white;
+	z-index: 9999;
+}
+
+.textboxright{
+	margin-left: 4.5vw;
+	margin-top: 26.4vw;
+	height: 50vw;
+	position: absolute;
+	display: inline-block;
+	color: black;
+	z-index: 2;
+}
+
+.textbox-r{
+	margin-left: -68vw;
+	margin-top: -27vw;
+	width: 74.5vw;
+	height: 10vw;
+}
+
+.textbox-r-grid{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(10,10%);
+	grid-template-rows: 1;
+}
+
+.textbox-r-items{
+	transform: rotate(-45deg);
+	width: 40vw;
+	color: white;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+.textbox-r-lines{
+	width: 100%;
+	height: 25vw;
+	display: grid;
+	margin-top: 5vw;
+	margin-left: 29.3vw;
+	grid-template-columns: repeat(10,10%);
+	grid-template-rows: 1;
+	overflow: hidden;
+}
+
+.textbox-r-line{
+	transform: rotate(-45deg);
+	width: 40vw;
+	margin-top: 13vw;
+	margin-left: -27vw;
+	color: white;
+	border-top: 0.1vw solid white;
+	box-sizing: border-box;
+}
+
+.eyeflow{
+	position: absolute;
+	display: inline-block;
+	background: transparent; 
+	width :0px; 
+	height:0PX; 
+	border-left: 2.5vw solid transparent ; 
+	border-right: 2.5vw solid black; 
+	border-bottom: 2.5vw solid black; 
+	border-top: 2.5vw solid transparent;
+	margin-top: 5vw;
+	margin-left: 26.5vw;
+	z-index: 10;
+}
+
+.textbox-p1{
+	width: 15vw;
+	height: 10vw;
+	margin-left: 16.3vw;
+	margin-top: 10vw;
+	position: absolute;
+	display: inline-block;
+	text-align: right;
+}
+
+.textbox-p2{
+	width: 14vw;
+	height: 10vw;
+	margin-left: 17.3vw;
+	margin-top: 23.4vw;
+	position: absolute;
+	display: inline-block;
+	line-height: 1.16vw;
+}
+
+.textbox-p3{
+	width: 14vw;
+	height: 10vw;
+	margin-left: 17.3vw;
+	margin-top: 50vw;
+	position: absolute;
+	display: inline-block;
+	line-height: 1.16vw;
+}

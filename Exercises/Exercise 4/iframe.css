@@ -1,0 +1,91 @@
+h1{
+	font-family: 'Patrick Hand SC', Roboto, cursive;
+	font-weight: 400;
+	font-size: 5vw;
+}
+
+
+body{
+	padding-bottom: 10vw;
+	padding-top: 10vw;
+	padding-left: 10vw;
+	text-align: center;
+	padding-right: 10vw;
+}
+
+img{
+	width: 80vw;
+	display: inline-block;
+	z-index: 9999;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	padding-top: 10%;
+	display: block;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.window{
+	width: 38vw;
+	height: 19vw;
+	position: absolute;
+	display: inline-block;
+	margin-top: -141vw;
+	margin-left:-16vw;
+	overflow: hidden;
+	transform: rotate(-2deg) scale(1);
+	z-index: -1;
+	border: 1px solid red;
+}
+
+
+.tv{
+	width: 38vw;
+	height: 30vw;
+	position: absolute;
+	display: inline-block;
+	margin-top: -125vw;
+	margin-left: -45.5vw;
+	overflow: hidden;
+	z-index: -1;
+	transform: skewY(-55.5deg) scale(0.5);
+}
+
+.com1{
+	width: 15vw;
+	height: 12vw;
+	position: absolute;
+	display: inline-block;
+	margin-top: -95vw;
+	margin-left: -8vw;
+	overflow: hidden;
+	z-index: -1;
+	transform: skewY(12deg);
+}
+
+.com2{
+	width: 15vw;
+	height: 12vw;
+	position: absolute;
+	display: inline-block;
+	margin-top: -91vw;
+	margin-left: 9vw;
+	overflow: hidden;
+	z-index: -1;
+	transform: skewY(12deg);
+}
+
+.phone{
+	width: 68vw;
+	height: 55vw;
+	position: absolute;
+	display: inline-block;
+	margin-top: -70vw;
+	margin-left: -57vw;
+	overflow: hidden;
+	z-index: -1;
+	transform: skewX(6deg) skewY(-33deg) scale(0.5) rotate(90deg);
+}

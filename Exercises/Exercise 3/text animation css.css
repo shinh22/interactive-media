@@ -1,0 +1,220 @@
+body{
+  padding-top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white;
+}
+
+/*contents organizer*/
+.organizer{                 
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+
+/*====================STYLE FOR "EVADE"====================*/
+
+.evade-box{
+  width: 80%;
+  height: 50vh;
+  display: inline-block;
+  background-color: #00d192;
+  position: relative;
+  text-align: center ;
+}
+
+.grid-evade{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 60% 40%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.evade-text{
+  font-family: duper, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 49vh;
+  font-size : 15vh;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+}
+
+.animation-evade{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0) ease-out;
+  transition: transform 0.3s;
+}
+
+.animation-evade:hover{
+  transform: translateY(30%);
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+/*====================STYLE FOR "MERGE"====================*/
+
+.merge-outbox{
+  width: 80%;
+  height: 50vh;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  background-color: #f2f3f7;
+}
+
+.merge-grid{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.merge{
+  /*padding-top: 10vh;*/
+  display: inline-block;
+  text-align: center;
+  font-family: Raleway,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size : 12vw;
+  line-height: 50vh;
+  color: #f2f3f7;
+  overflow: hidden;
+  text-shadow: ;
+}
+
+.animation-merge{
+  text-shadow:-0.05rem 0 white, 0 0.05px white, 0.05px 0 white, 0 -0.05px white, 
+               0.5rem 0.5rem 1.2rem #c5ccdb, -0.6rem -0.6rem 1.0rem white;
+  transition: text-shadow 0.6s ease-in;
+}
+
+.animation-merge:hover{
+                 text-shadow: 0px 0px 0px #e6eaf2, 0px 0px 0px #ebeef5;
+                 transition: text-shadow 0.2s ease-in;
+                 cursor: pointer;
+}
+
+/*====================STYLE FOR "CRUSH"====================*/
+
+.crush-outbox{
+  width: 80%;
+  height: 30vw;
+  display: inline-block;
+  text-align: absolute;
+  position: relative;
+  background-color: #ff9999;
+  box-sizing: border-box;
+  font-family: NanumSquareWeb, Helvetica, sans-serif;
+  font-size: 10vw;
+  src: url(NanumSquareEB.woff) format('woff');
+  font-weight: 800;
+  color: white;
+  overflow: hidden;
+  padding-top: 8vw;
+  cursor: pointer;
+}
+
+.crush-cr{
+  display: inline-block;
+  position: absolute;
+  height: 15vw;
+  margin-left: 0em;
+  box-sizing: border-box;
+  z-index: 1;
+  transition: all .35s;
+}
+
+.crush-u{
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 15vw;
+  margin-left: -50%;
+  box-sizing: border-box;
+  z-index: 4;
+}
+
+.crush-u-mask{
+  display: inline-block;
+  margin-left: -0.2em;
+  width: 60%;
+  height: 15vw;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #ff9999;
+  z-index: 2;
+}
+
+.crush-sh{
+  display: inline-block;
+  width: 2em;
+  height: 15vw;
+  position: absolute;
+  margin-left: 5.14em;
+  box-sizing: border-box;
+  z-index: 3;
+  transition: all;
+}
+
+.crush-outbox:hover .crush-cr {
+              animation: leftgo 1s ease-in-out;
+              animation-delay: 0.7s;
+              animation-fill-mode: forwards;
+}
+
+@keyframes leftgo{
+            0% {transform: translateX(0em);}
+            50% {transform: translateX(-8em);}
+            100%{transform: translateX(-1.94em);}
+}
+
+.crush-outbox:hover .crush-sh {
+              animation: rightgo 5s ease-out;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 1;
+}
+
+@keyframes rightgo{
+            0%{transform: translateX(5.5em) skewX(-45deg);}
+            15%{transform: translateX(-5.3em) skewX(-45deg);}
+            19%{transform: translate(-5.15em, -3vh);}
+            23%{transform: translate(-5.1em, 0);}
+            25%{transform: translate(-5.08em, -2vh);}
+            27%{transform: translate(-5.05em, 0);}
+            29%{transform: translate(-5.02em, -1vh);}
+            31%{transform: translate(-5.0em, 0);}
+            100%{transform: translateX(-5em);}
+}
+
+.crush-outbox:hover .crush-u {
+              animation: earthquake 0.15s ease-in-out;
+              animation-delay: 0.7s;
+              animation-iteration-count: 4;
+}
+
+@keyframes earthquake{
+            0% { transform: scale(1);    } 
+            100% { transform: scale(1);    }
+            25%  { transform: scale(1.1); }
+            75%  { transform: scale(0.9); }
+}
+
+span:nth-child(1){color: white}
+span:nth-child(2){color: #fff0f0}
+span:nth-child(3){color: #ffe5e5}
+span:nth-child(4){color: #ffe0e0}
+span:nth-child(5){color: #ffd1d1}
+span:nth-child(6){color: #ffc2c2}
+span:nth-child(7){color: #ffb3b3}
+span:nth-child(8){color: #ffa8a8}
