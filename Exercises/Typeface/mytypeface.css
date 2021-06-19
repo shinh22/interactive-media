@@ -4,11 +4,13 @@ body{
 	background-color: #EEECE5;
 }
 
+/*==================== Contents organizer ==================*/
 .organizer{
 	width: 100%;
 	text-align: center;
 }
 
+/*=================== Quare with a diagonal ================*/
 .topimage {
 	position: relative;
 	display: inline-block;
@@ -22,12 +24,13 @@ body{
 	margin-bottom: 150px;
 }
 
+/*================= Wrapper for each letter ================*/
 .letter {
-	width:300px; /*resize as you see fit */
-	height:300px; /*resize as you see fit */
-	display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
-	border:1px solid lightgray; /*feel free to remove or hide this rule */
-	position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+	width:300px; 
+	height:300px; 
+	display:inline-block; 
+	border:1px solid lightgray;
+	position:relative; 
 	margin: 50px;
 }
 
@@ -38,20 +41,17 @@ body{
 	grid-template-rows: repeat(10, 10%) ;
 	width:100%; 
 	height: 100%; 
-/*	background-color: white; */
-
-
 }
 
 .grid-item {
 	width: 100%;
 	height: 100%;
-/*	border: 1px solid gray; */
 	box-sizing: border-box;
 }
 
+/*================== Slope line 1 (like /) =================*/
 .sideline{
-	/* 1*5 */
+	/* position: (1,5) */
 	width: 5px;
 	height: 300px;
 	transform: skew(-45deg);
@@ -59,8 +59,9 @@ body{
 	margin-left: 13px;
 }
 
+/*================== Slope line 2 (like /) =================*/
 .sideline2{
-	/* 1*6 */
+	/* position: (1,6) */
 	width: 5px;
 	height: 300px;
 	transform: skew(-45deg);
@@ -68,8 +69,9 @@ body{
 	margin-left: -2px;
 }
 
+/*================== Slope line 3 (like /) =================*/
 .sideline3{
-	/* 1*7 */
+	/* position: (1,7) */
 	width: 5px;
 	height: 300px;
 	transform: skew(-45deg);
@@ -77,8 +79,9 @@ body{
 	margin-left: -17px;
 }
 
+/*=============== Half slope line 1 (like /) ===============*/
 .sideline-h1{
-	/* 6*1 */
+	/* position: (6,1) */
 	width: 5px;
 	height: 151px;
 	transform: skew(-45deg);
@@ -87,8 +90,9 @@ body{
 	margin-top: -1px;
 }
 
+/*=============== Half slope line 2 (like /) ===============*/
 .sideline2-h1{
-	/* 6*2 */
+	/* position: (6,2) */
 	width: 5px;
 	height: 151px;
 	transform: skew(-45deg);
@@ -97,8 +101,9 @@ body{
 	margin-top: -1px;
 }
 
+/*================ Half slope line 3 (like /) ==============*/
 .sideline3-h1{
-	/* 6*3 */
+	/* position: (6,3) */
 	width: 5px;
 	height: 151px;
 	transform: skew(-45deg);
@@ -107,8 +112,9 @@ body{
 	margin-top: -1px;
 }
 
+/*============== Vertical line at the rightside ============*/
 .vertical{ 
-	/* 1*10 */
+	/* position: (1,10) */
 	width: 8px;
 	height: 289px;
 	background: black;
@@ -116,8 +122,9 @@ body{
 	margin-top:  11px;
 } 
 
+/*=============== Vertical line at the middle ==============*/
 .vertical-mid{ 
-	/* 6*5 */
+	/* position: (6,5) */
 	width: 4px;
 	height: 145px;
 	background: black;
@@ -125,8 +132,9 @@ body{
 	margin-top:  5px;
 } 
 
+/*======= First half vertical line at the rightside ========*/
 .vertical-h1{
-	/* 1x10 */
+	/* position: (1,10) */
 	width: 8px;
 	height: 147px;
 	background: black;
@@ -134,8 +142,9 @@ body{
 	margin-top:  11px;
 } 
 
+/*======= Second half vertical line at the rightside =======*/
 .vertical-h2{
-	/* 6x10 */
+	/* position: (6,10) */
 	width: 8px;
 	height: 146px;
 	background: black;
@@ -143,8 +152,9 @@ body{
 	margin-top:  4px;
 } 
 
+/*============= Vertical gap filler on the top =============*/
 .vertical-top{ 
-	/* 1*9 */
+	/* position: (1,9) */
 	width: 8px;
 	height: 15px;
 	background: black;
@@ -152,8 +162,9 @@ body{
 	margin-top:  0px;
 } 
 
+/*================ Horizon line at the middle===============*/
 .horizon{
-	/* 6x6 */
+	/* position: (6,6) */
 	width: 141px;
 	height: 4px;
 	background: black;
@@ -161,9 +172,9 @@ body{
 	margin-top:  4px;
 }
 
-
+/*=== Half sized cross line from left top to right bottom ==*/
 .cross-down{
-	/* 6x9 */
+	/* position: (6,9) */
 	width: 5px;
 	height: 142px;
 	transform: skew(45deg);
@@ -172,8 +183,9 @@ body{
 	margin-top: 8px;
 }
 
+/*== Short cross line from left top to right bottom for Q ==*/
 .cross-down-q{
-	/* 6x9 */
+	/* position: (6,9) */
 	width: 5px;
 	height: 70px;
 	transform: skew(45deg);
@@ -182,8 +194,9 @@ body{
 	margin-top: 80px;
 }
 
+/*== Half sized cross line from left bottom to right top ===*/
 .cross-up{
-	/* 6x9 */
+	/* position: (6,9) */
 	width: 5px;
 	height: 143px;
 	transform: skew(-45deg);
@@ -191,8 +204,10 @@ body{
 	margin-left: -11px;
 	margin-top: 7px;
 }
+
+/* Half sized cross line from left bottom to right top for X*/
 .cross-up-x{
-	/* 6x8 */
+	/* position: (6,8) */
 	width: 5px;
 	height: 143px;
 	transform: skew(-45deg);
@@ -201,10 +216,9 @@ body{
 	margin-top: 7px;
 }
 
-
-
+/*================ Horizon line at the bottom ==============*/
 .underline{
-	/* 10x2 */
+	/* position: (10,2) */
 	width: 287px;
 	height: 4px;
 	background: black;
@@ -212,8 +226,9 @@ body{
 	margin-top:  26px;
 }
 
+/*============= Longer first half horizon line =============*/
 .underline-h1{
-	/* 10x2 */
+	/* position: (10,2) */
 	width: 143px;
 	height: 4px;
 	background: black;
@@ -221,8 +236,9 @@ body{
 	margin-top:  26px;
 }
 
+/*============= Shorter first half horizon line ============*/
 .underline-s{
-	/* 10x1 */
+	/* position: (10,1) */
 	width: 30px;
 	height: 4px;
 	background: black;
@@ -230,28 +246,12 @@ body{
 	margin-top:  26px;
 }
 
+/*=============== Second half horizon line =================*/
 .underline-z{
-	/* 10x2 */
+	/* position: (10,2) */
 	width: 143px;
 	height: 4px;
 	background: black;
 	margin-left: -18px;
 	margin-top:  26px;
-}
-/*
-.capline-top{ */
-	/* 1*9 */
-	width: 90px;
-	height: 4px; 
-	background: black;
-	margin-left: 10px;
-}
-/*
-.capline-bottom{ */
-	/* 1*9 */
-	width: 90px;
-	height: 4px; 
-	background: black;
-	margin-left: -45px;
-	margin-top: 56px;
 }

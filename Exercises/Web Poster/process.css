@@ -49,22 +49,19 @@ h1{
 	background-color: #fcfcfa;
 	overflow: hidden;
 	box-shadow: 0.2vw 0.2vw 0.5vw #c4c1b7;
-/*	border: 1vw solid black;*/
 }
 
+/*title textbox*/
 .titlebox{
 	display: inline-block;
 	position: absolute;
-/*	z-index: 9999;*/
 	width: 100%;
 	margin-left: vw;
 	margin-top: 5vw;
 	text-align: right;
-	border: 1px solid red;
 }
 
-
-
+/*=============== graph paper grids =============*/
 .titlegrid{
 	margin-top: 8%;
 	position: absolute;
@@ -109,6 +106,7 @@ h1{
 	border-bottom: 0.15vw solid #ccb5b4;	
 }
 
+/*punch hole */
 .punchhole-wrap{
 	margin-top: 1vw;
 	position: absolute;

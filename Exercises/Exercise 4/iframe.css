@@ -2,6 +2,7 @@ h1{
 	font-family: 'Patrick Hand SC', Roboto, cursive;
 	font-weight: 400;
 	font-size: 5vw;
+	color: white;
 }
 
 body{
@@ -10,6 +11,7 @@ body{
 	padding-left: 10vw;
 	text-align: center;
 	padding-right: 10vw;
+	background-color: black;
 }
 
 img{
@@ -19,6 +21,7 @@ img{
 	box-sizing: border-box;
 }
 
+/*====================contents organizer====================*/
 .container{
 	width: 100%;
 	padding-top: 10%;
@@ -27,6 +30,7 @@ img{
 	overflow: hidden;
 }
 
+/*=======iframe wrappers- determining the size of frame=======*/
 .window{
 	width: 38vw;
 	height: 19vw;
@@ -39,7 +43,6 @@ img{
 	z-index: -1;
 	border: 1px solid red;
 }
-
 
 .tv{
 	width: 38vw;

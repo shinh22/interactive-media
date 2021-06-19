@@ -15,6 +15,7 @@ body{
 	background-color: white;
 }
 
+/*title font setting*/
 h1{
 	font-family: 'ethan_sloperegular', sans-serif;
 	font-style: regular;
@@ -25,19 +26,21 @@ h1{
 	font-weight: 200;
 }
 
+/*diagonal text line font setting*/
 h2{
 	font-family: NanumSquareWeb, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 1.2vw;
 }
 
-
+/*detailed text setting*/
 p{
 	font-family: NanumSquareWeb, Helvetica, sans-serif;
 	font-weight: 200;
 	font-size: 0.7vw;
 }
 
+/*contents organizer*/
 .contentbox{
 	width: 80vw;
 	height: 80vw;
@@ -50,6 +53,7 @@ p{
 	z-index: 1;
 }
 
+/*black right triangle at the left top corner*/
 .slopebox{
 	position: absolute;
 	display: inline-block;
@@ -64,6 +68,7 @@ p{
 	z-index: 10;
 }
 
+/*white title textbox*/
 .textboxleft{
 	margin-left: 4.5vw;
 	margin-top: 26.4vw;
@@ -74,6 +79,7 @@ p{
 	z-index: 9999;
 }
 
+/*black title textbox*/
 .textboxright{
 	margin-left: 4.5vw;
 	margin-top: 26.4vw;
@@ -91,6 +97,7 @@ p{
 	height: 10vw;
 }
 
+/*▼▼▼▼▼▼▼▼▼▼▼ diagonal textline frame and contents ▼▼▼▼▼▼▼▼▼▼*/
 .textbox-r-grid{
 	width: 100%;
 	height: 100%;
@@ -127,7 +134,9 @@ p{
 	border-top: 0.1vw solid white;
 	box-sizing: border-box;
 }
+/*▲▲▲▲▲▲▲▲▲▲▲ diagonal textline frame and contents ▲▲▲▲▲▲▲▲▲▲*/
 
+/*small black right trianle*/
 .eyeflow{
 	position: absolute;
 	display: inline-block;
@@ -143,6 +152,7 @@ p{
 	z-index: 10;
 }
 
+/*textbox for time-place info*/
 .textbox-p1{
 	width: 15vw;
 	height: 10vw;
@@ -153,6 +163,7 @@ p{
 	text-align: right;
 }
 
+/*textbox for lecture info*/
 .textbox-p2{
 	width: 14vw;
 	height: 10vw;
@@ -163,6 +174,7 @@ p{
 	line-height: 1.16vw;
 }
 
+/*textbox for lecturer info*/
 .textbox-p3{
 	width: 14vw;
 	height: 10vw;
