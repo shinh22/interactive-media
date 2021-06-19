@@ -1,38 +1,47 @@
 body{
-	padding: 10%;
+	padding: 10% 25%;
 	background-color: #EEECE5;
 	font-size: 15px;
 }
 
-.org{
-	text-align: center;
-	margin-bottom: 10%;
-}
-
 h1{
-	font-size: 2.5em;
+	font-size: 2vw;
 }
 
 p{
-	font-size: 1.5em;
-	margin-bottom: 15%;
+	font-size: 1.2vw;
+	margin-bottom: 10%;
+	padding-top: 10%;
+	padding-left: 7%;
+	padding-right: 7%;
+	text-align: center;
 }
 
-.container{
-	width: 60%;
+/*multipurpose organizer*/
+.org{
+	text-align: center;
+	display: block;
 }
 
+/*organizer for text contents*/
+.textbox{
+	width: 100%;
+	position: relative;
+	display: block;
+}
+
+/*typeface letter box*/
 .letter {
-	width:10%; /*resize as you see fit */
-	display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
-/*	border:1px solid lightgray; /*feel free to remove or hide this rule */
-	position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
-	margin: 0 3%;
+	width:10%; 
+	display:inline-block; 
+	position:relative;
+	margin: 0 4%;
 }
 
+/*height shape keeper*/
 .letter:after{
 	content:  "";
-	display: block;
+	display: inline-block;
 	padding-bottom: 100%;
 }
 
@@ -42,6 +51,7 @@ p{
 	height: 100%;
 }
 
+/*▽▽▽▽▽▽▽▽▽▽▽ grid and items for prototype 1 ▽▽▽▽▽▽▽▽▽▽▽▽*/
 .grid {
 	position: absolute;
 	display: grid;
@@ -114,5 +124,3 @@ p{
 	background-color:;
 	box-sizing: border-box;
 }
-
-/* #4679BD */
