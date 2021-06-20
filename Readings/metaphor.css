@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	background-color: whitesmoke;
+}
+
+h1{
+	font-family: 'Neucha', cursive;
+	width: 60vw;
+	font-size: 3vw;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	margin: 5vw 10vw;
+	color: white;
+}
+
+h2{
+	font-family: 'Neucha', cursive;
+	font-size: 1vw;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	margin: 0 10vw;
+	color: white;
+	width: 60vw;
+	font-weight: 200;
+}
+
+p{
+	font-family: 'Neucha', cursive;
+	font-size: 1.5vw;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	margin: 0 10vw;
+	color: white;
+	width: 60vw;
+	font-weight: 200;
+}
+
+/*inner color box*/
+.inner-bg{
+	margin-left: 10vw;
+	padding-bottom: 40vw;
+	margin-bottom: 10vw;
+	width: 80vw;
+	height: 100%;
+	position: absolute;
+	display: inline-block;
+	background-color: #a3c2bd;
+}
+
+/*image discription box*/
+.egon{
+	position: absolute;
+	width: 100%;
+	margin-top: 43vw;
+	display: inline-block;
+}
+
+/*textbox*/
+.box{
+	position: absolute;
+	width: 100%;
+	margin-top: 50vw;
+	display: inline-block;
+}
