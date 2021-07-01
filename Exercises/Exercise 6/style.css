@@ -1,0 +1,273 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body{
+	padding-top: 5%;
+/*	padding-left: 15%;
+	padding-right: 15%;*/
+	padding-bottom: 5%;
+	font-size: 1vw;
+	margin: 0;
+}
+
+H1{
+	font-family: 'NanumSquare', helvetica, sans-serif;
+	font-size: 8em;
+	font-weight: 800;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+H2{
+	font-family: 'NanumSquare', helvetica, sans-serif;
+	font-size: 4.5em;
+	font-weight: 800;
+	margin-top: 0;
+	margin-bottom: 0.1em;
+}
+
+H3{
+	font-family: 'NanumSquare', helvetica, sans-serif;
+	font-size: 1.8em;
+	font-weight: 800;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+p{
+	font-family: 'NanumSquare', helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+/*****Documentation text contents setting*****/
+/*Header*/
+H4{
+	font-family: 'NanumSquare', helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: 800;
+	color: #414141;
+}
+/*Header*/
+H5{
+	font-family: 'NanumSquare', helvetica, sans-serif;
+	font-size: 1.3em;
+	margin-top: 0;
+	line-height: 1em;
+	font-weight: 400;
+}
+
+a:link{
+	color: #455C7D;
+}
+
+a:visited{
+	color: #8EBBBF;
+}
+
+a:hover{
+	color: #E39C9C;
+}
+
+a:active{
+	color: #455C7D;
+}
+
+.h-line{
+	position: relative;
+	display: inline-grid;
+	width: 70%;
+	margin-left: 15%;
+	height: auto;
+	border-top: 1px solid black;	
+	margin-bottom: 3%;
+}
+
+.palette-box{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+}
+
+.palette1{
+	width: 10vw;
+	height: 10vw;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	font-family: 'NanumSquare', helvetica, sans-serif;
+	font-size: 1vw;
+	font-weight: 800;
+	line-height: 10vw;
+	float: left;
+}
+
+.palette1:nth-child(1){
+	background-color: #455C7D;
+}
+.palette1:nth-child(2){
+	background-color: #EFEFED;
+	color: black;
+}
+
+.palette2{
+	width: 10vw;
+	height: 10vw;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	font-family: 'NanumSquare', helvetica, sans-serif;
+	font-size: 1vw;
+	font-weight: 800;
+	line-height: 10vw;
+	float: left;
+}
+
+.palette2:nth-child(1){
+	background-color: #E39C9C;
+}
+.palette2:nth-child(2){
+	background-color: #8EBBBF;
+}
+.palette2:nth-child(3){
+	background-color: #1E1E1E;
+}
+.palette2:nth-child(4){
+	border: 1px solid dimgray;
+	background-color: white;
+	color: black;
+}
+
+.InputBox_IA{
+	position: relative;
+	margin-top: -1.5em;
+	width: 25em;
+	height: 1.8em;
+	display: inline-block;
+	border: 1.5px solid #EFEFED;
+}
+
+.InputBox_A{
+	position: relative;
+	margin-top: -1.5em;
+	width: 25em;
+	height: 1.8em;
+	display: inline-block;
+	border: 2px solid #455C7D;
+}
+
+.InputBox_SS{
+	position: relative;
+	margin-top: -1.5em;
+	width: 25em;
+	height: 1.8em;
+	display: inline-block;
+	border: 2px solid #8EBBBF;
+}
+
+.InputBox_ES{
+	position: relative;
+	margin-top: -1.5em;
+	width: 25em;
+	height: 1.8em;
+	display: inline-block;
+	border: 2px solid #E39C9C;
+}
+
+.ButtonBox{
+	position: relative;
+	display: grid;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+	grid-template-rows: 1.5em 2em;
+	grid-template-columns: 15em 15em 15em 15em;
+	line-height: 2em;
+}
+
+.Button_D{
+	position: relative;
+	margin-top: 0.1vw;
+	display: inline-block;
+	width: 50%;
+	border-radius: 1em;
+	background-color: #455C7D;
+	text-align: center;
+	color: white;
+}
+
+.Button_H{
+	position: relative;
+	margin-top: 0.1vw;
+	display: inline-block;
+	width: 50%;
+	border-radius: 1em;
+	background-color: #768BA9;
+	text-align: center;
+	color: white;
+}
+
+.Button_A{
+	position: relative;
+	margin-top: 0.1vw;
+	display: inline-block;
+	width: 50%;
+	border-radius: 1em;
+	background-color: #8EBBBF;
+	text-align: center;
+	color: white;
+}
+
+.Button_I{
+	position: relative;
+	margin-top: 0.1vw;
+	display: inline-block;
+	width: 50%;
+	border-radius: 1em;
+	background-color: #EFEFED;
+	text-align: center;
+}
+
+.exp{
+	padding-top: 5%;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 35vw;
+	background-color: #455C7D;
+	padding-bottom: 1%;
+}
+
+.popup{
+	position: absolute;
+	display: block;
+	width: 23vw;
+	height: 35vw;
+	border-radius: 2vw;
+	box-shadow: 1em 1em 1em rgba(0,0,0,.2);
+	background-color: white;
+	margin-left: 67%;
+	margin-top: -18%;
+	z-index: 9999;
+	text-align: center;
+}
+
+.expfoot{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 15vw;
+	background-color: #EFEFED;
+	padding-bottom: 1%;
+}
+
+.expfoot_txt{
+	margin-top: 2%;
+	margin-left: 5%;
+	position: absolute;
+	display: inline-block;
+	width: 55%;
+	height: auto;
+}
