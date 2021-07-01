@@ -1,14 +1,13 @@
+/*font import: NanumSquare*/
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 body{
 	padding-top: 5%;
-/*	padding-left: 15%;
-	padding-right: 15%;*/
-	padding-bottom: 5%;
 	font-size: 1vw;
 	margin: 0;
 }
 
+/*Text Settings*/
 H1{
 	font-family: 'NanumSquare', helvetica, sans-serif;
 	font-size: 8em;
@@ -74,7 +73,56 @@ a:active{
 	color: #455C7D;
 }
 
-.h-line{
+
+/*input settings*/
+input:focus{
+	border: 2px solid #455C7D;
+}
+
+input:valid{
+	border: 2px solid #8EBBBF;
+}
+
+/*Font Replace: main font does not show '***' when input is given*/
+input[type=password] {
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	font-color: #455C7D;}
+
+::placeholder {
+	font-family: 'NanumSquare', Helvetica, sans-serif;
+	font-size: 1em;
+	font-color: #455C7D;
+}
+
+
+form.val input:invalid {
+	border: 2px solid #E39C9C;
+}
+
+button{
+	position: relative;
+	width: 40%;
+	height: 2em;
+	border-radius: 1em;
+	text-align: center;
+	background-color: none;
+	font-family: 'NanumSquare', Helvetica, sans-serif;
+	font-size: 1em;
+	margin-top: 5%;
+	background-color: #455C7D;
+	color: white;
+}
+
+button:hover{
+	background-color: #768BA9;
+}
+
+button:focus{
+	background-color: #8EBBBF;	
+}
+
+.h-line{ 					/*Contents Wrapper*/
 	position: relative;
 	display: inline-grid;
 	width: 70%;
@@ -84,7 +132,8 @@ a:active{
 	margin-bottom: 3%;
 }
 
-.palette-box{
+/*********************Color Palette Settings*********************/
+.palette-box{ 				/*palette wrapper*/
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -140,7 +189,8 @@ a:active{
 	color: black;
 }
 
-.InputBox_IA{
+/***********Input Settings***********/
+.InputBox_IA{ 				/*Default Input Box*/
 	position: relative;
 	margin-top: -1.5em;
 	width: 25em;
@@ -176,6 +226,19 @@ a:active{
 	border: 2px solid #E39C9C;
 }
 
+.InputBox{
+	width: 60%;
+	height: 2em;
+	border-radius: 1em;
+	text-align: center;
+	background-color: none;
+	border: 1.5px solid #EFEFED;
+	font-family: 'NanumSquare', Helvetica, sans-serif;
+	font-size: 1em;
+	outline: none;
+}
+
+/***********Button Settings***********/
 .ButtonBox{
 	position: relative;
 	display: grid;
@@ -230,6 +293,7 @@ a:active{
 	text-align: center;
 }
 
+/***********Example Page Settings***********/
 .exp{
 	padding-top: 5%;
 	position: relative;
@@ -242,7 +306,7 @@ a:active{
 
 .popup{
 	position: absolute;
-	display: block;
+	display: grid;
 	width: 23vw;
 	height: 35vw;
 	border-radius: 2vw;
@@ -252,6 +316,7 @@ a:active{
 	margin-top: -18%;
 	z-index: 9999;
 	text-align: center;
+	grid-template-rows: 30% 30% 40%;
 }
 
 .expfoot{
