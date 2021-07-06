@@ -1,0 +1,42 @@
+/*=======import fonts========*/
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body{
+    font-family: 'NanumSquare',Helvetica,sans-serif;
+    margin: 0;
+    padding: 5% 20%;
+}
+
+img{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bttom: 5%;
+    box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.4) ;
+}
+
+p{
+    margin-top: 3%;
+    font-size: 14pt;
+}
+
+h1{
+    font-size: 40pt;
+    font-weight: 800;
+    text-align: center;
+}
+
+h2{
+    font-size: 30pt;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 10%;
+}
+.abox{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+}
